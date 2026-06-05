@@ -1,10 +1,19 @@
 #include <iostream>
 
+        /* ----------NAMESPACE---------- */
+    namespace primeiro{
+        int x = 1;
+    }
+    namespace segundo{
+        int a = 2;
+    }
+
 int main(){
+  /* ----------CONCEITOS BÁSICOS---------- */
     std::cout << "Hello Word!" << std::endl; /* endl = end Line = Fim da linha*/
     std::cout << "I'm Angelo!" << '\n'; /*c= caractere => out= saida => cout = saida de caracteres | endl = '\n'*/
    
- //Operações
+  //Operações
    int x; 
    x = 8;
    int y = 6;
@@ -16,7 +25,14 @@ int main(){
 
    //Declarar String
     std::string nome = "Miguel";
-    std::cout << "Oi, " << nome;
+    std::cout << "Oi, " << nome << '\n';
+
+    /* ----------NAMESPACE---------- */
+    std::cout << primeiro::x << '\n';
+
+    using namespace segundo;    
+    int a = 10;
+    std::cout << a;
 
     return 0; 
 }
