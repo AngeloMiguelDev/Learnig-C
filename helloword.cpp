@@ -1,4 +1,5 @@
 #include <iostream> //Biblioteca para exibir mensagens
+#include <vector>
 
         /* ----------NAMESPACE---------- */
     namespace primeiro{
@@ -7,6 +8,10 @@
     namespace segundo{
         int a = 2;
     }
+
+    
+    /* ----------TYPEDEF---------- */
+    typedef std::vector<std::pair<std::string, int >> pairlist_t;
 
 int main(){
   /* ----------CONCEITOS BÁSICOS---------- */
@@ -33,6 +38,17 @@ int main(){
     using namespace segundo;    
     int a = 10;
     std::cout << a;
+
+
+    using std::cout; //Evita usar o std para cout e string
+    using std::string;
+
+    string name = "Pedro";
+
+    cout << "Ric";
+
+    /* ----------TYPEDEF---------- */
+    pairlist_t pairlist;
 
     return 0; 
 }
