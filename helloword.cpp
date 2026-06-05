@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> //Biblioteca para exibir mensagens
 
         /* ----------NAMESPACE---------- */
     namespace primeiro{
